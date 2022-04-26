@@ -1,1 +1,51 @@
-<p>movies works!</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="movies.component.css" type="text/css">
+	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet"> 
+	<title>Peliculas</title>
+</head>
+<body>
+	<header>
+		<div class="contenedor">
+			<h2 class="logotipo">Sistema de Recomendación para peliculas</h2>
+			<nav>
+				<a href="/home" class="activo">Inicio</a>
+				<a href="/movies/Ant-Man">Recomendación</a>
+			</nav>
+		</div>
+	</header>
+
+	<main>
+		<div class="recomendamos">
+			<div class="contenedor-dos">
+				<form class="example-form">
+					  <mat-button-toggle-group name="favoriteColor" aria-label="Favorite Color">
+						<mat-button-toggle value="red"><img src="../../assets/antman.jpg"></mat-button-toggle>
+						<mat-button-toggle value="green">Green</mat-button-toggle>
+						<mat-button-toggle value="blue">Blue</mat-button-toggle>
+					  </mat-button-toggle-group>
+					  <mat-form-field appearance="fill">
+						<mat-label>Fill form field</mat-label>
+						<input matInput placeholder="Placeholder">
+					  </mat-form-field>
+				</form>
+                <form action="">
+                    <h2>Ingresa la pelicula (Con base a esta te mostraremos similares teniendo en cuenta su rating):</h2><br>
+                    <input type="text" name="firstname" value="">
+                    <section>
+						<div class="example-button-row">
+						  <button mat-raised-button>Basic</button>
+						</div>
+					  </section>
+                    <h2>Recomendaciones:</h2><br>
+                </form>
+			</div>
+			<textarea rows="20" cols="auto"></textarea>
+		</div>
+	</main>
+	<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+</body>
+</html>
