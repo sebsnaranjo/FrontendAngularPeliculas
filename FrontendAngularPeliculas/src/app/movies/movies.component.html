@@ -16,7 +16,7 @@
 			<h2 class="logotipo">Sistema de Recomendación para peliculas</h2>
 			<nav>
 				<a href="/home" class="activo">Inicio</a>
-				<a href="/movies/Ant-Man">Recomendación</a>
+				<a href="/movies">Recomendación</a>
 			</nav>
 		</div>
 	</header>
@@ -25,22 +25,46 @@
 		<div class="recomendamos">
 			<div class="contenedor-dos">
 				<form action="">
-					<h2>Ingresa la pelicula (Con base a esta te mostraremos similares teniendo en cuenta su rating):
+					<h2>Ingresa la pelicula (Con base a esta te mostraremos similares teniendo en cuenta la calificación y su rating):
 					</h2><br>
-					<input type="text" [(ngModel)]="title" name="title">
-					<button mat-raised-button (click)="search()">Basic</button>
-					<h2>Recomendaciones:</h2><br>
+					<div class="contenedor-info infe">
+						<input type="text" [(ngModel)]="title" name="title">
+						<div class="info">
+							<button mat-raised-button (click)="search()">Recomendacion Coseno</button>
+						</div>
+						<div class="info_2">
+							<button mat-raised-button (click)="search2()">Recomendacion Minkowski</button>
+						</div>
+					</div>
 				</form>
-				<p>{{pelicula_1}}</p>
-				<p>{{pelicula_2}}</p>
-				<p>{{pelicula_3}}</p>
-				<p>{{pelicula_4}}</p>
-				<p>{{pelicula_5}}</p>
-				<p>{{pelicula_6}}</p>
-				<p>{{pelicula_7}}</p>
-				<p>{{pelicula_8}}</p>
-				<p>{{pelicula_9}}</p>
-				<p>{{pelicula_10}}</p>
+				<div class="contenedor-info">
+					<div class="info">
+						<h2>Recomendaciones según Minkowski:</h2><br>
+						<p>{{pelicula_11}}</p>
+						<p>{{pelicula_12}}</p>
+						<p>{{pelicula_13}}</p>
+						<p>{{pelicula_14}}</p>
+						<p>{{pelicula_15}}</p>
+						<p>{{pelicula_16}}</p>
+						<p>{{pelicula_17}}</p>
+						<p>{{pelicula_18}}</p>
+						<p>{{pelicula_19}}</p>
+						<p>{{pelicula_20}}</p>
+					</div>
+					<div class="info_2">
+						<h2>Recomendaciones según Coseno:</h2><br>
+						<p>{{pelicula_1}}</p>
+						<p>{{pelicula_2}}</p>
+						<p>{{pelicula_3}}</p>
+						<p>{{pelicula_4}}</p>
+						<p>{{pelicula_5}}</p>
+						<p>{{pelicula_6}}</p>
+						<p>{{pelicula_7}}</p>
+						<p>{{pelicula_8}}</p>
+						<p>{{pelicula_9}}</p>
+						<p>{{pelicula_10}}</p>
+					</div>
+				</div>
 			</div>
 		</div>
 	</main>

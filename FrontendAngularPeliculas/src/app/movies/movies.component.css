@@ -9,7 +9,8 @@ body {
 	background: #141414;
 	font-family: 'Open Sans', sans-serif;
 	margin: 0px !important;
-	padding: 0
+	padding: 0;
+	height: 130%;
 }
 
 hr{
@@ -52,7 +53,6 @@ header nav a.activo {
 .recomendamos {
 	font-family: 'Open Sans', sans-serif;
 	text-align: center;
-	margin-top: 120px;
 }
 
 .contenedor-dos {
@@ -91,6 +91,26 @@ header nav a.activo {
 	width: 615px;
 	height: 200px;
 	border-radius: 5px;
+}
+
+.contenedor-info{
+	width: 100%;
+	clear: both;
+}
+
+.infe input {
+	margin-left: 30px;
+	margin-top: 30px;
+}
+
+.info{
+	width: 50%;
+	float: right;
+}
+
+.info_2{
+	width: 50%;
+	float: right;
 }
 
 /* ---- ----- ----- Pelicula Principal ----- ----- ----- */
