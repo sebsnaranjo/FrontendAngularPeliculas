@@ -12,7 +12,7 @@ import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
-
+import { MatTableModule } from '@angular/material/table';
 
 
 @NgModule({
@@ -30,7 +30,8 @@ import { FormsModule } from '@angular/forms';
     MatButtonToggleModule,
     MatFormFieldModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    MatTableModule
   ],
   providers: [],
   bootstrap: [AppComponent]

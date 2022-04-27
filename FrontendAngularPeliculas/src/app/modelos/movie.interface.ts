@@ -1,3 +1,3 @@
 export interface Movies {
-    title: string;
+    pelicula: string;
 }
